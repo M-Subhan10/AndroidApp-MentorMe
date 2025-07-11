@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Greeting Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello,"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Ali"
+                android:textColor="#1C5E7C"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/notification_icon"
+                android:layout_marginStart="200dp" />
+        </LinearLayout>
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready for mentorship? Let's begin the journey!"
+            android:textColor="#1C5E7C"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Horizontally scrollable buttons -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textColor="@color/white"
+                    android:background="@drawable/sendbtn_bg"
+                    android:layout_marginEnd="10dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/home_buttons"
+                    android:padding="15dp"
+                    android:text="Education"
+                    android:textColor="#1C5E7C" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entrepreneurship"
+                    android:textColor="#1C5E7C"
+                    android:padding="15dp"
+                    android:background="@drawable/home_buttons"
+                    android:layout_marginEnd="10dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Growth"
+                    android:textColor="#1C5E7C"
+                    android:padding="15dp"
+                    android:background="@drawable/home_buttons"
+                    android:layout_marginEnd="10dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Career"
+                    android:textColor="#1C5E7C"
+                    android:padding="15dp"
+                    android:background="@drawable/home_buttons"
+                    android:layout_marginEnd="10dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top mentors for you"
+            android:textColor="@color/TextColor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"
+            android:textColor="@color/TextColor"/>
+
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:paddingStart="16dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="16dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education Mentors"
+                android:textColor="@color/TextColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:textColor="@color/TextColor"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:paddingStart="16dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="16dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent Mentors"
+                android:textColor="@color/TextColor"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:layout_marginStart="110dp"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:textColor="@color/TextColor"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:paddingStart="16dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="16dp"
+            android:clipToPadding="false"
+            android:layout_marginBottom="40dp"
+            android:overScrollMode="never" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

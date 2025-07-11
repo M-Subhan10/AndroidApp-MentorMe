@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="selected">#9DDBEF</color>
+    <color name="notselected">#3A656B</color>
+    <color name="background">#B8E2E9</color>
+    <color name="navBar">#194A61</color>
+    <color name="TextColor">#1C5E7C</color>
+
+
 </resources>
+
