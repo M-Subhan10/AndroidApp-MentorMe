@@ -49,6 +49,13 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+
+    //Image selector
+    implementation ("com.github.dhaval2404:imagepicker:2.1")
+    implementation(libs.appcompat)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

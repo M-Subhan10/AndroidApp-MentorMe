@@ -12,12 +12,14 @@
         android:padding="16dp">
 
         <!-- Greeting Row -->
+
+        <!-- Description -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginTop="40dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -30,20 +32,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
                 android:text=" Ali"
                 android:textColor="#1C5E7C"
+                android:layout_weight="1"
                 android:textSize="30sp"
-                android:textStyle="bold"
-                android:layout_marginStart="4dp" />
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/notification_icon"
-                android:layout_marginStart="200dp" />
+                android:src="@drawable/notification_icon" />
         </LinearLayout>
 
-        <!-- Description -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,6 +115,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:gravity="center_vertical">
 
         <TextView
@@ -122,13 +124,13 @@
             android:text="Top mentors for you"
             android:textColor="@color/TextColor"
             android:textSize="22sp"
+            android:layout_weight="1"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="View All"
-            android:layout_marginStart="110dp"
             android:layout_marginTop="3dp"
             android:textStyle="bold"
             android:textColor="@color/TextColor"/>
@@ -149,12 +151,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginEnd="20dp"
             android:gravity="center_vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Education Mentors"
+                android:layout_weight="1"
                 android:textColor="@color/TextColor"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -163,7 +167,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View All"
-                android:layout_marginStart="110dp"
                 android:layout_marginTop="3dp"
                 android:textStyle="bold"
                 android:textColor="@color/TextColor"/>
@@ -185,6 +188,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginEnd="20dp"
             android:gravity="center_vertical">
 
             <TextView
@@ -192,6 +196,7 @@
                 android:layout_height="wrap_content"
                 android:text="Recent Mentors"
                 android:textColor="@color/TextColor"
+                android:layout_weight="1"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
@@ -199,7 +204,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View All"
-                android:layout_marginStart="110dp"
                 android:layout_marginTop="3dp"
                 android:textStyle="bold"
                 android:textColor="@color/TextColor"/>
