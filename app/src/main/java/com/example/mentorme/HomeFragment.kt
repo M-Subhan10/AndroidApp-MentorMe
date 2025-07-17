@@ -2,12 +2,15 @@ package com.example.mentorme
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class HomeFragment : Fragment() {
 
@@ -19,19 +22,34 @@ class HomeFragment : Fragment() {
     private lateinit var roleList: Array<String>
     private lateinit var priceList: Array<String>
 
+    private lateinit var auth: FirebaseAuth
+    private lateinit var usernameText: TextView
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
+        // Firebase init
+        auth = FirebaseAuth.getInstance()
+
+        // Greeting name TextView
+        usernameText = view.findViewById(R.id.user_name)
+        loadUserName()
+
+        // RecyclerViews setup
         recyclerView = view.findViewById(R.id.recyclerview)
         recyclerView2 = view.findViewById(R.id.recyclerview2)
         recyclerView3 = view.findViewById(R.id.recyclerview3)
 
-        recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-        recyclerView2.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
-        recyclerView3.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        recyclerView.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        recyclerView2.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        recyclerView3.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
         recyclerView.setHasFixedSize(true)
         recyclerView2.setHasFixedSize(true)
@@ -66,5 +84,16 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = adapter
         recyclerView2.adapter = adapter
         recyclerView3.adapter = adapter
+    }
+
+    private fun loadUserName() {
+        val user: FirebaseUser? = auth.currentUser
+        val nameFromFirebase = user?.displayName
+
+        usernameText.text = if (!nameFromFirebase.isNullOrEmpty()) {
+            "$nameFromFirebase"
+        } else {
+            "User"
+        }
     }
 }

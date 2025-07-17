@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558224946886",
+    "project_id": "mentorme-3943b",
+    "storage_bucket": "mentorme-3943b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558224946886:android:35420368596347bf1dc9c7",
+        "android_client_info": {
+          "package_name": "com.example.mentorme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo-Wbl0gA2gm4yysA1UtfiOC3cRvcb5Xg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

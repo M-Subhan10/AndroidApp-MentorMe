@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -55,6 +56,8 @@ dependencies {
     //Image selector
     implementation ("com.github.dhaval2404:imagepicker:2.1")
     implementation(libs.appcompat)
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.database.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

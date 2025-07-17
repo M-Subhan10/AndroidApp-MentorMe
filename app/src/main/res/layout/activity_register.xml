@@ -16,8 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="150dp"
-            android:paddingBottom="50dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
             android:layout_gravity="center">
 
             <TextView
@@ -48,10 +48,6 @@
             android:orientation="vertical"
             android:background="@drawable/login_bg">
 
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -65,10 +61,11 @@
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
                     android:text="Get Started!"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:textSize="45dp"
+                    android:textSize="30dp"
                     />
 
                 <TextView
@@ -78,14 +75,14 @@
                     android:paddingTop="10dp"
                     android:text="Name"
                     android:paddingStart="5dp"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textColor="@color/white"
                     />
 
                 <EditText
                     android:id="@+id/input_name"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="35dp"
                     android:hint="Enter Name"
                     android:paddingStart="5dp"
                     android:background="@drawable/edittext_bg"
@@ -98,14 +95,14 @@
                     android:paddingTop="10dp"
                     android:text="Email"
                     android:paddingStart="5dp"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textColor="@color/white"
                     />
 
                 <EditText
                     android:id="@+id/input_email"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="35dp"
                     android:hint="Enter Email"
                     android:paddingStart="5dp"
                     android:background="@drawable/edittext_bg"
@@ -118,14 +115,14 @@
                     android:paddingTop="10dp"
                     android:text="Contact Number"
                     android:paddingStart="5dp"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textColor="@color/white"
                     />
 
                 <EditText
                     android:id="@+id/input_number"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="35dp"
                     android:hint="Enter Contact Number"
                     android:paddingStart="5dp"
                     android:background="@drawable/edittext_bg"
@@ -138,18 +135,24 @@
                     android:paddingTop="10dp"
                     android:text="country"
                     android:paddingStart="5dp"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textColor="@color/white"
                     />
 
-                <EditText
+                <AutoCompleteTextView
                     android:id="@+id/input_country"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:hint="Enter your country"
+                    android:layout_height="35dp"
+                    android:hint="Select your country"
                     android:paddingStart="5dp"
                     android:background="@drawable/edittext_bg"
-                    android:inputType="text" />
+                    android:inputType="none"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:dropDownHeight="200dp"
+                    />
+
+
 
                 <TextView
                     android:id="@+id/textView2"
@@ -158,14 +161,14 @@
                     android:paddingTop="10dp"
                     android:text="City"
                     android:paddingStart="5dp"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textColor="@color/white"
                     />
 
                 <EditText
                     android:id="@+id/input_city"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="35dp"
                     android:hint="Enter your city"
                     android:paddingStart="5dp"
                     android:background="@drawable/edittext_bg"
@@ -178,14 +181,14 @@
                     android:paddingTop="10dp"
                     android:text="Passowrd"
                     android:paddingStart="5dp"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:textColor="@color/white"
                     />
 
                 <EditText
                     android:id="@+id/input_password"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="35dp"
                     android:hint="Enter your password"
                     android:paddingStart="5dp"
                     android:background="@drawable/edittext_bg"
@@ -198,7 +201,7 @@
                     android:layout_gravity="start"
                     android:paddingTop="5dp"
                     android:textColor="@color/white"
-                    android:paddingBottom="20dp"
+                    android:paddingBottom="30dp"
                     android:text="Password must be 8 characters long" />
 
                 <androidx.appcompat.widget.AppCompatButton
@@ -216,7 +219,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:paddingTop="40dp"
+                    android:paddingTop="30dp"
                     android:gravity="center">
 
 
@@ -247,10 +250,6 @@
 
 
             </LinearLayout>
-
-
-
-            </ScrollView>
         </LinearLayout>
 
 
