@@ -12,14 +12,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Back Button -->
-        <ImageView
-            android:id="@+id/backimg_forgotPassword"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="12dp"
-            android:src="@drawable/backarrow" />
-
         <!-- Title -->
         <TextView
             android:layout_width="wrap_content"
@@ -27,7 +19,8 @@
             android:text="Lets Find..."
             android:textColor="#1C5E7C"
             android:textStyle="bold"
-            android:textSize="28sp"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
             android:layout_marginBottom="12dp" />
 
         <!-- Search View -->
@@ -52,6 +45,7 @@
 
         <!-- Recent Item 1 -->
         <LinearLayout
+            android:id="@+id/recent1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -67,6 +61,7 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/cross1"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/cross_img" />
@@ -74,6 +69,7 @@
 
         <!-- Recent Item 2 -->
         <LinearLayout
+            android:id="@+id/recent2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -89,6 +85,7 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/cross2"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/cross_img" />
@@ -96,6 +93,7 @@
 
         <!-- Recent Item 3 -->
         <LinearLayout
+            android:id="@+id/recent3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -111,6 +109,7 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/cross3"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/cross_img" />

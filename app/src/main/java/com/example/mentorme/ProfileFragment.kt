@@ -7,6 +7,7 @@ import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.view.*
+import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mentorme.databinding.FragmentProfileBinding
@@ -31,12 +32,16 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
+
+
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
 
         sharedPref = requireContext().getSharedPreferences("ProfilePrefs", Context.MODE_PRIVATE)
 
         loadSavedImages()
         setupRecyclerView()
+
 
         binding.coverFab.setOnClickListener {
             ImagePicker.with(this)

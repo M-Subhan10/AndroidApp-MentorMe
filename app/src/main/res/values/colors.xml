@@ -7,6 +7,8 @@
     <color name="background">#C5E7F0</color>
     <color name="navBar">#194A61</color>
     <color name="TextColor">#1C5E7C</color>
+    <color name="Yellow">#FFC107</color>
+    <color name="Lines">#357FA0</color>
 
 
 </resources>

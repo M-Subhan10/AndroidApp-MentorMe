@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Notifications">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        
+        <!-- Top Bar -->
+        <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/backimg_notifications"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/backarrow"
+            android:contentDescription="Back" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/profile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textColor="#1C5E7C"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/notification_icon"
+            android:contentDescription="Back" />
+    </LinearLayout>
+
+        <!-- Clear All Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="30dp"
+            android:paddingTop="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/Yellow"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/clear_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear all"
+                android:textColor="@color/Yellow"
+                android:textStyle="bold"
+                android:paddingEnd="30dp"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <!-- Notifications List -->
+        <LinearLayout
+            android:id="@+id/noti1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You have added a mentor, ALex. Thank you! 🙌🏻"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"/>
+
+            <ImageView
+                android:id="@+id/cross1_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:src="@drawable/cross_img"/>
+
+
+        </LinearLayout>
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Lines" />
+        <LinearLayout
+            android:id="@+id/noti2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your favourite list is expanding. Impressive 😄"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"/>
+
+            <ImageView
+                android:id="@+id/cross2_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:src="@drawable/cross_img"/>
+
+
+        </LinearLayout>
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Lines" />
+        <LinearLayout
+            android:id="@+id/noti3"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You have new message in community 👀"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/cross3_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:src="@drawable/cross_img"/>
+
+
+        </LinearLayout>
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Lines" />
+        <LinearLayout
+            android:id="@+id/noti4"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your favourite mentor is online, Say Hi to him 👋🏻"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/cross4_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:src="@drawable/cross_img"/>
+
+
+        </LinearLayout>
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Lines" />
+        <LinearLayout
+            android:id="@+id/noti5"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thank You for booking a session,  Goodluck 👍🏻"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:paddingStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/cross5_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:src="@drawable/cross_img"/>
+
+
+        </LinearLayout>
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/Lines" />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

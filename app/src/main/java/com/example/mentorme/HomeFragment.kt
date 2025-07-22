@@ -1,10 +1,12 @@
 package com.example.mentorme
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -34,6 +36,12 @@ class HomeFragment : Fragment() {
 
         // Firebase init
         auth = FirebaseAuth.getInstance()
+
+        val notificationBtn = view.findViewById<ImageView>(R.id.notification_btn)
+        notificationBtn.setOnClickListener {
+            startActivity(Intent(requireContext(), Notifications::class.java))
+        }
+
 
         // Greeting name TextView
         usernameText = view.findViewById(R.id.user_name)
